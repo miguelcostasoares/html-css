@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    background-attachment: fixed;
+}
+
+body {
+    background-image: linear-gradient(to right, #25B89F, #358577, #01EBC3);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #2b333298;
+    width: 1000px;
+    padding: 30px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+div.button{
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    padding: 30px;
+    box-shadow: 3px 3px 5px #2b333298;
+    margin: auto;
+}

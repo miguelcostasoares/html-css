@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    /* Cores do Site */
+    --cor0: #5EDFFA;
+    --cor1: #5FFAE1;
+    --cor2: #5FAFFA;
+    --cor3: #5FFAAC;
+    --cor4: #5F7EFA;
+    /* Fontes do Site */
+    --fonte-titulo: "Playfair Display", serif;
+    --fonte-texto: "Lora", serif;
+    --fonte-menu: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: var(--fonte-texto);
+}
+
+a.interno::after {
+    content: '\00A0\1F4D6';
+}
+header {
+    background-color: var(--cor0);
+    min-height: 225px;
+    text-align: center;
+    padding-top: 40px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+    font-family: var(--fonte-texto);
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.842);
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav {
+    background-color: var(--cor0);
+    padding: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--cor2);
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    margin-bottom: 20px;
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor3);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor2);
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor3);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 8px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor4);
+    margin-bottom: 30px;
+    margin: 0px -20px 0px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var();
+}
